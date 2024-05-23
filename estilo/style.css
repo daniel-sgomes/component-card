@@ -1,0 +1,113 @@
+body {
+    background: hsl(217, 54%, 11%);
+}
+
+.container {
+    width: 290px;
+    padding: 20px;
+    background: hsl(216, 50%, 16%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.content-image {
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: url(../images/mao\ \(4\).png), auto;
+    position: relative;
+}
+
+.content-image img {
+    width: 100%;
+}
+
+.oculta {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgb(4, 251, 248, 0.5);
+    transition: 0.5s;
+}
+
+.oculta img {
+    width: 40px;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.content-image:hover .oculta {
+    display: block;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    margin: 16px 0;
+    cursor: url(../images/mao\ \(4\).png), auto;
+    transition: 0.5s;
+}
+
+h1:hover {
+    color: #04fbf8;
+}
+
+p {
+    color: hsl(217, 18%, 54%);
+}
+
+.p-tall {
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.p-scale {
+    color: #04fbf8;
+    font-weight: 500;
+
+}
+
+.content-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0 8px 0;
+    padding-top: 14px;
+    border-top: 1px solid rgb(82, 82, 82);
+}
+
+.content-user img {
+    width: 28px;
+    border: solid 1px hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.content-user span {
+    color: hsl(0, 0%, 100%);
+    cursor: url(../images/mao\ \(4\).png), auto;
+    transition: 0.5s;
+}
+
+.content-user span:hover {
+    color: #04fbf8;
+}
